@@ -1,0 +1,29 @@
+{
+  "name": "moscow-time-plugin",
+  "displayName": "Moscow Time Plugin",
+  "description": "Плагин для вывода текущего московского времени",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:moscowTime.show"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "moscowTime.show",
+        "title": "Показать текущее московское время"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}
